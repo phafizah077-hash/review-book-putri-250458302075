@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Review Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom styles can go here if needed */
+      .book-card {
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/20L7UHzh/yLw6B+7zWqg5l5R0m+zX6r3R2N6e5U4tE/205b3U4M5D1b9b"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="font-sans">
+    <header class="bg-white p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="text-xl font-bold text-gray-800">
+          <span class="text-purple-900">Review</span
+          ><span class="text-green-300">Book</span>
+        </div>
+        <div class="px-4 py-2 rounded-lg">
+          <div class="flex justify-center mt-10">
+            <div
+              class="flex items-center bg-white shadow-md rounded-full px-4 py-2 w-full max-w-md"
+            >
+              <input
+                type="text"
+                placeholder="Find the book..."
+                class="flex-grow focus:outline-none px-2 text-gray-700"
+              />
+              <!-- Icon search -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="w-5 h-5 text-gray-500"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 104.5 4.5a7.5 7.5 0 0012.15 12.15z"
+                />
+              </svg>
+                
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center space-x-4">
+          <div
+            class="bg-green-300 text-white w-6 h-6 rounded-full flex items-center justify-center font-bold text-sm"
+          >
+            3
+          </div>
+
+          <div class="text-gray-600 font-semibold cursor-pointer">EN</div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto p-4">
+      <section class="items-center justify-center flex">
+        <div class="p-4">
+          <div class="container mx-auto">
+            <div
+              class="flex space-x-8 items-center text-gray-600 font-semibold items-center"
+            >
+              <a
+                href="#"
+                class="hover:border-b-2 hover:border-green-500 hover:text-gray-500 py-2 text-purple-900"
+                >Home</a
+              >
+
+              <a
+                href="#"
+                class="hover:border-b-2 hover:border-green-500 hover:text-gray-500 py-2 text-purple-900"
+                >Bestseller</a
+              >
+
+              <a
+                href="#"
+                class="hover:border-b-2 hover:border-green-500 hover:text-gray-500 py-2 text-purple-900"
+                >Category</a
+              >
+
+              <a
+                href="#"
+                class="hover:border-b-2 hover:border-green-500 hover:text-gray-500 py-2 text-purple-900"
+                >Community</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="bg-yellow-50 rounded-lg flex flex-col md:flex-row items-center justify-between mt-8"
+        style="
+          background-image: url(bg\ remove.png);
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        "
+      >
+        <div class="w-full md:w-1/2 p-20">
+          <h1 class="text-4xl font-bold text-purple-900">
+            Book is a <br />window to the world
+          </h1>
+          <p class="mt-4 text-gray-600 font-semibold">
+            wake up your dream by reading a book every day
+          </p>
+          <a
+            href="login.html"
+            class="mt-6 inline-block bg-green-300 text-white px-6 py-3 rounded-lg font-semibold hover:bg-yellow-600"
+            >Read Now</a
+          >
+        </div>
+        <div class="w-full md:w-1/2 mt-6 md:mt-0 flex justify-center">
+          <img
+            src="foto section 1 remove.png"
+            alt="Hero Illustration"
+            class="w-full max-w-sm"
+          />
+        </div>
+      </section>
+
+      <section class="mt-12">
+        <div class="flex justify-between items-center mb-6">
+          <h2 class="text-2xl font-semibold text-purple-900">Popular Now</h2>
+          <a href="#" class="">View All</a>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-white rounded-lg p-4 book-card">
+            <img
+              src="images/poto 1.jpg"
+              alt="Book Cover"
+              class="mx-auto rounded-lg"
+            />
+            <h3 class="mt-2 font-semibold text-gray-800">Selena</h3>
+            <img
+              src="images/poto bintang remove.png"
+              alt=""
+              class="items-center w-40"
+            />
+            <p class="text-sm text-gray-500 mt-5">Tere Liye</p>
+            <div class="flex items-center mt-6 space-x-2">
+              <img
+                src="images/poto profil 1.jpg"
+                alt="Profile Picture"
+                class="w-10 h-10 rounded-full"
+              />
+              <div class="flex items-center space-x-1 text-gray-600">
+                <span class="font-semibold">Andre Syak</span>
+                <span>&bull;</span>
+                <span class="text-sm">1 week ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg p-4 book-card">
+            <img
+              src="images/poto 2.jpg"
+              alt="Book Cover"
+              class="mx-auto rounded-lg"
+            />
+            <h3 class="mt-2 font-semibold text-gray-800">
+              How To Master Your Habits
+            </h3>
+            <img
+              src="images/poto bintang remove.png"
+              alt=""
+              class="items-center w-40"
+            />
+            <p class="text-sm text-gray-500 mt-5">Felix Y Siauw</p>
+            <div class="flex items-center mt-6 space-x-2">
+              <img
+                src="images/poto profil 2.jpg"
+                alt="Profile Picture"
+                class="w-10 h-10 rounded-full"
+              />
+              <div class="flex items-center space-x-1 text-gray-600">
+                <span class="font-semibold">John Lucas</span>
+                <span>&bull;</span>
+                <span class="text-sm">5 day ago</span>
+              </div>
+                 
+            </div>
+          </div>
+          <div class="bg-white rounded-lg p-4 book-card">
+            <img
+              src="images/poto 3.jpg"
+              alt="Book Cover"
+              class="mx-auto rounded-lg"
+            />
+            <h3 class="mt-2 font-semibold text-gray-800">Bintang</h3>
+            <img
+              src="images/poto bintang remove.png"
+              alt=""
+              class="items-center w-40"
+            />
+            <p class="text-sm text-gray-500 mt-5">Tere Liye</p>
+            <div class="flex items-center mt-6 space-x-2">
+              <img
+                src="images/poto profil 4.jpg"
+                alt="Profile Picture"
+                class="w-10 h-10 rounded-full"
+              />
+              <div class="flex items-center space-x-1 text-gray-600">
+                <span class="font-semibold">Ade Barkah</span>
+                <span>&bull;</span>
+                <span class="text-sm">6 month ago</span>
+              </div>
+                 
+            </div>
+          </div>
+          <div class="bg-white rounded-lg p-4 book-card">
+            <img
+              src="images/poto 4.jpg"
+              alt="Book Cover"
+              class="mx-auto rounded-lg"
+            />
+            <h3 class="mt-2 font-semibold text-gray-800">Start With Why</h3>
+            <img
+              src="images/poto bintang remove.png"
+              alt=""
+              class="items-center w-40"
+            />
+            <p class="text-sm text-gray-500 mt-5">Felix Y Siauw</p>
+            <div class="flex items-center mt-6 space-x-2">
+              <img
+                src="images/poto profil 3.jpg"
+                alt="Profile Picture"
+                class="w-10 h-10 rounded-full"
+              />
+              <div class="flex items-center space-x-1 text-gray-600">
+                <span class="font-semibold">Ryan Dewa</span>
+                <span>&bull;</span>
+                <span class="text-sm">3 month ago</span>
+              </div>
+                 
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-12">
+        <div class="flex justify-between items-center mb-6">
+          <h2 class="text-2xl font-semibold text-purple-900">Latest Books</h2>
+          <a href="#" class="">View All</a>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-white rounded-lg p-4 book-card">
+            <img
+              src="images/poto 5.jpg"
+              alt="Book Cover"
+              class="mx-auto rounded-lg"
+            />
+            <h3 class="mt-2 font-semibold text-gray-800">
+              The Compount Effect
+            </h3>
+            <img
+              src="images/poto bintang remove.png"
+              alt=""
+              class="items-center w-40"
+            />
+            <p class="text-sm text-gray-500 mt-5">Drren Hardy</p>
+            <div class="flex items-center mt-6 space-x-2">
+              <img
+                src="images/poto profil 1.jpg"
+                alt="Profile Picture"
+                class="w-10 h-10 rounded-full"
+              />
+              <div class="flex items-center space-x-1 text-gray-600">
+                <span class="font-semibold">Andre Syak</span>
+                <span>&bull;</span>
+                <span class="text-sm">1 week ago</span>
+              </div>
+                 
+            </div>
+          </div>
+          <div class="bg-white rounded-lg p-4 book-card">
+            <img
+              src="images/poto 6.jpg"
+              alt="Book Cover"
+              class="mx-auto rounded-lg"
+            />
+            <h3 class="mt-2 font-semibold text-gray-800">
+              Build A Story Brand
+            </h3>
+            <img
+              src="images/poto bintang remove.png"
+              alt=""
+              class="items-center w-40"
+            />
+            <p class="text-sm text-gray-500 mt-5">Donald Miller</p>
+            <div class="flex items-center mt-6 space-x-2">
+              <img
+                src="images/poto profil 2.jpg"
+                alt="Profile Picture"
+                class="w-10 h-10 rounded-full"
+              />
+              <div class="flex items-center space-x-1 text-gray-600">
+                <span class="font-semibold">John Lucas</span>
+                <span>&bull;</span>
+                <span class="text-sm">5 day ago</span>
+              </div>
+                 
+            </div>
+          </div>
+          <div class="bg-white rounded-lg p-4 book-card">
+            <img
+              src="images/poto 7.jpg"
+              alt="Book Cover"
+              class="mx-auto rounded-lg"
+            />
+            <h3 class="mt-2 font-semibold text-gray-800">Crushing IT</h3>
+            <img
+              src="images/poto bintang remove.png"
+              alt=""
+              class="items-center w-40"
+            />
+            <p class="text-sm text-gray-500 mt-5">Gary Vaynerchuk</p>
+            <div class="flex items-center mt-6 space-x-2">
+              <img
+                src="images/poto profil 4.jpg"
+                alt="Profile Picture"
+                class="w-10 h-10 rounded-full"
+              />
+              <div class="flex items-center space-x-1 text-gray-600">
+                <span class="font-semibold">Ade Barkah</span>
+                <span>&bull;</span>
+                <span class="text-sm">6 month ago</span>
+              </div>
+                 
+            </div>
+          </div>
+          <div class="bg-white rounded-lg p-4 book-card">
+            <img
+              src="images/poto 8.jpg"
+              alt="Book Cover"
+              class="mx-auto rounded-lg"
+            />
+            <h3 class="mt-2 font-semibold text-gray-800">Atomic Habits</h3>
+            <img
+              src="images/poto bintang remove.png"
+              alt=""
+              class="items-center w-40"
+            />
+            <p class="text-sm text-gray-500 mt-5">James Clear</p>
+            <div class="flex items-center mt-6 space-x-2">
+              <img
+                src="images/poto profil 3.jpg"
+                alt="Profile Picture"
+                class="w-10 h-10 rounded-full"
+              />
+              <div class="flex items-center space-x-1 text-gray-600">
+                <span class="font-semibold">Ryan Dewa</span>
+                <span>&bull;</span>
+                <span class="text-sm">3 month ago</span>
+              </div>
+                 
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recommended Section -->
+      <section
+        class="bg-yellow-50 py-12 px-20 max-w-7xl mx-auto rounded-2xl mt-10"
+        style="
+          background-image: url(bg\ remove.png);
+          background-repeat: no-repeat;
+        "
+      >
+        <div class="container mx-auto text-center px-6">
+          <h3 class="text-2xl font-semibold mb-6 text-purple-900">
+            Recommended books <br />from you to review
+          </h3>
+          <form class="flex justify-center max-w-lg mx-auto">
+            <input
+              type="text"
+              placeholder="Write your recommendation"
+              class="w-full border rounded-l-lg px-4 py-2 focus:outline-none"
+            />
+            <button
+              class="bg-green-600 text-white px-6 rounded-r-lg hover:bg-green-700"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <section class="mt-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div
+            class="bg-white rounded-lg p-6 flex flex-col items-center text-center border border-green-300"
+          >
+            <img
+              src="images/poto orang 1.jpg"
+              alt="User Avatar"
+              class="w-20 h-20 rounded-full mb-4 -m-10"
+            />
+            <p class="mt-2 font-semibold text-gray-800">Eka Ardilah</p>
+            <p class="italic text-gray-600">
+              "I feel very helpful with all the books provided, so I do my job
+              easily and happily"
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-lg p-6 flex flex-col items-center text-center border border-green-300"
+          >
+            <img
+              src="images/poto orang 2.jpg"
+              alt="User Avatar"
+              class="w-20 h-20 rounded-full mb-4 -m-10"
+            />
+            <p class="mt-2 font-semibold text-gray-800">Hazar Hamzah</p>
+            <p class="italic text-gray-600">
+              "Thank you. Many good books to accompany everyday"
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-lg p-6 flex flex-col items-center text-center border border-green-300"
+          >
+            <img
+              src="images/poto orang 3.jpg"
+              alt="User Avatar"
+              class="w-20 h-20 rounded-full mb-4 -m-10"
+            />
+            <p class="mt-2 font-semibold text-gray-800">Khoerunnisa</p>
+            <p class="italic text-gray-600">
+              "Thanks team, many recommanded books for me to read"
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="mt-12 bg-yellow-50 p-8">
+      <div
+        class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-gray-600"
+      >
+        <div>
+          <h3 class="font-bold text-2xl text-purple-900 mb-2">
+            Review<span class="text-green-300">Book</span>
+          </h3>
+          <p class="text-sm">Is the best place to review a book</p>
+        </div>
+        <div>
+          <h3 class="font-bold text-gray-800 mb-2">Navigation</h3>
+          <ul class="space-y-1">
+            <li><a href="#" class="hover:underline">Home</a></li>
+            <li><a href="#" class="hover:underline">Bestseller</a></li>
+            <li><a href="#" class="hover:underline">Category</a></li>
+            <li><a href="#" class="hover:underline">Community</a></li>
+            <li><a href="#" class="hover:underline">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-gray-800 mb-2">Company</h3>
+          <ul class="space-y-1">
+            <li>
+              <a href="#" class="hover:underline">admin@reviewbook.com</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline">Jln. Stiabudhi No. 193</a>
+            </li>
+            <li><a href="#" class="hover:underline">Bandung Indonesia</a></li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="mt-8 text-sm text-gray-500 pt-4 px-20 flex items-center justify-center"
+      >
+        &copy; 2025 ReviewBook. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>
